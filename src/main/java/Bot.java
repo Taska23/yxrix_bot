@@ -141,12 +141,13 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
-
+    config config = new config();
     public String getBotUsername() {
-        return "Manus";
+
+        return config.getUsername();
     }
 
     public String getBotToken() {
-        return "1142411080:AAFeRp-4IiRqjsw7BFFKAx8495DGzO8ZT-c";
+        return config.getKey();
     }
 }
